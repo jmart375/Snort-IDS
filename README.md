@@ -8,10 +8,10 @@ Snort is a versatile and effective tool for monitoring and protecting networked 
 
 ## Intrusion Detection System Lab Setup
 This lab aims to determine the alerts generated for a Snort intrusion detection system (IDS) running on a network where malicious network traffic is present. The lab network is a network address translation (NAT) network with three virtual machines (VM) hosts: Metasploitable 2, Kali Linux, and Snort. Metasploitable 2 is an intentionally vulnerable Linux host that can be easily exploited. Kali Linux is an industry-standard penetration-testing Linux distribution. The Snort IDS runs on Ubuntu 22.04.1 LTS server, and the virtual network interface card (NIC), enp0s3, is running in promiscuous mode. The network is sandboxed to prevent extraneous network traffic during the lab exercise. The network IP address is 172.16.1.0/29, with a default gateway of 172.16.1.1 and a broadcast address of 172.16.1.7. The VM IP addresses are as follows:
-•	Metasploitable 2: 172.16.1.4
+
+- Metasploitable 2: 172.16.1.4
 •	Kali Linux: 172.16.1.5
 •	Snort IDS: 172.16.1.6
-
 
 ## Snort IDS Setup
 Before commencing the lab exercise, the Snort IDS host required minimal setup. The host’s NIC was placed into the promiscuous mode with the following command: sudo ip link set enp0s3 promisc on. The command was confirmed by checking the NIC status with ip a. 
